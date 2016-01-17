@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="sample">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ngVisibleInView Sample</title>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container" ng-controller="sampleController">
+  <h1>ngVisibleInView Sample</h1>
+  <p>Scroll down to bottom of rows.</p>
+  <table class="table table-striped" ng-show="rows.length > 0">
+    <tr>
+      <th>#</th>
+      <th>Value</th>
+    </tr>
+    <tr ng-repeat="row in rows">
+      <td>{{row.key}}</td>
+      <td>
+        <span>{{row.value}}</span>
+        <span ng-if="$last" visible-in-view>This is last row which is target visibleInView directive.</span><!-- This element is onVisibleInView event trigger. -->
+        <!--<span ng-if="$last" visible-in-view="{{row}}"></span>-->
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/df-visible/jquery.visible.min.js"></script>
+<script src="/bower_components/ngVisibleInView/ng-visible-in-view.js"></script>
+<script src="/js/sample.js"></script>
+</body>
+</html>
