@@ -31,6 +31,7 @@
     "tests"
   ],
   "dependencies": {
-    "df-visible": "~1.2.0"
+    "df-visible": "~1.2.0",
+    "angular": "~1.4.8"
   }
 }
