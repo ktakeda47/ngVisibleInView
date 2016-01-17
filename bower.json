@@ -1,0 +1,36 @@
+{
+  "name": "ngVisibleInView",
+  "homepage": "https://github.com/ktakeda47/ngVisibleInView",
+  "authors": [
+    "ktakeda47 <ktakeda47@gmail.com>"
+  ],
+  "description": "An angular.js custom directive.",
+  "main": "ng-visible-in-view.js",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "directive",
+    "visible",
+    "viewport",
+    "visibility",
+    "view",
+    "scroll",
+    "display",
+    "ui",
+    "helper",
+    "element",
+    "hidden",
+    "hide"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "df-visible": "~1.2.0"
+  }
+}
